@@ -4,7 +4,9 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "eslint ."
+//npx eslint --fix .
   },
   "repository": {
     "type": "git",
@@ -12,8 +14,11 @@
   },
   "private": true,
   "devDependencies": {
+    "@eslint/js": "^9.13.0",
     "css-loader": "^7.1.2",
+    "eslint": "^9.13.0",
     "gh-pages": "^6.1.1",
+    "globals": "^15.11.0",
     "live-server": "^1.2.2",
     "prettier": "3.3.3",
     "sass": "^1.78.0",
@@ -21,6 +26,7 @@
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.5.4",
+    "typescript-eslint": "^8.10.0",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
